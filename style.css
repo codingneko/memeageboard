@@ -1,0 +1,7 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul {
+}
