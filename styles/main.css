@@ -1,9 +1,14 @@
+@import 'navigation.css';
+@import 'forms.css';
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
+
 body {
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: Harmattan, 'Roboto', 'Helvetica', 'Arial', sans-serif;
     background: #444;
     min-height: 100vh;
     margin: 0rem;
     padding: 0rem;
+    color: #eee;
 }
 
 .container {
@@ -11,39 +16,7 @@ body {
     margin: auto;
 }
 
-nav {
-    position: relative;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(139deg, #445 0%, #556 25%, #445 100%);
-    border-bottom: 2px solid #556;
-    box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
-}
-
-ul {
-    margin: 0rem;
-}
-
-.left-nav ul {
-    display: flex;
-    justify-content: left;
-    list-style: none;
-}
-
-.left-nav ul a {
-    display: block;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
+a {
+    color: #eee;
     text-decoration: none;
-    color: #fff;
-    transition: 0.25s ease-in-out;
-}
-
-.left-nav ul a.active {
-    background-color: #fff;
-    border-radius: 0.4rem;
-    color: black;
-}
-
-.left-nav ul a:not(.active):hover {
-    color: #faf;
 }

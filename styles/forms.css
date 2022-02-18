@@ -1,0 +1,35 @@
+.form-field-container {
+    margin: 2rem 0rem;
+}
+
+.form-field[type='text'],
+.form-field[type='password'] {
+    width: calc(100% - 1.25rem);
+    height: 2rem;
+    background-color: #555555;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    padding-left: 1.25rem;
+    transition: 0.5s;
+}
+
+.form-field:focus-visible {
+    background-color: #606060;
+    border: none;
+    outline: none;
+}
+
+.form-submit-container {
+    text-align: right;
+}
+
+.form-submit-container input[type='submit'] {
+    padding: 0.5rem 1rem;
+    background-color: #555555;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+}
