@@ -1,19 +1,13 @@
 <?php
     require_once('db/ImageController.php');
-    require_once('db/MigrationController.php');
+    require_once('db/TagController.php');
     
     $imageController = new ImageController();
-    try {
-        $images = $imageController->getImages();
-    } catch (PDOException $e) {
-        if ($e->getCode() == "42S02") {
-            $migrationController = new MigrationController();
+    $tagController = new TagController();
 
-            $migrationController->migrateAll();
-            header('Location: /');
-        }
-    }
-    
+    $tag = $tagController->getTagByTagName($tag_name);
+
+    $images = $imageController->getImagesByTagId($tag->getId());
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +17,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Imageboard</title>
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/img-grid.css">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/img-grid.css">
     </head>
     <body>
         <?php include('components/navbar.php'); ?>

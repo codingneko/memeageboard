@@ -10,20 +10,15 @@
     <body>
         <?php include('components/navbar.php'); ?>
         <div class="container">
-            <h1>Upload a file</h1>
-            <form action="" method="POST" enctype="multipart/form-data">
+            <h1>Register</h1>
+            <form action="" method="POST">
                 <div class="form-field-container">
-                    <label for="username">Tags:</label>
-                    <input 
-                        type="text" 
-                        name="tags" 
-                        id="tags" 
-                        placeholder="shrek crab_rave jake_paul" 
-                        class="form-field">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" class="form-field">
                 </div>
                 <div class="form-field-container">
-                    <label for="password">File:</label>
-                    <input type="file" name="file" id="file" class="form-field">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" class="form-field">
                 </div>
                 <div class="form-submit-container">
                     <input type="submit" value="Submit">

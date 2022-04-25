@@ -12,7 +12,7 @@
                     <a href="/users" class="<?php active('users'); ?>">Users</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="/upload">Upload</a>
+                    <a href="/upload" class="<?php active('upload') ?>">Upload</a>
                 </li>
             </ul>
         </div>

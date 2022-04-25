@@ -1,5 +1,6 @@
 @import 'navigation.css';
 @import 'forms.css';
+@import 'toasts.css';
 @import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
 
 body {

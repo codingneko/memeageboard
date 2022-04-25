@@ -1,8 +1,8 @@
 <?php
-    require_once('db/TagController.php');
+    require_once('db/UserController.php');
 
-    $tagController = new TagController();
-    $tags = $tagController->getTags();
+    $userController = new UserController();
+    $users = $userController->getUsers();
 ?>
 
 <!DOCTYPE html>
@@ -17,9 +17,9 @@
     <body>
         <?php include('components/navbar.php'); ?>
         <div class="container">
-            <?php foreach ($tags as $tag): ?>
+            <?php foreach ($users as $user): ?>
                 <div class="users-container">
-                    <a href="/tag/<?= $tag->getTagName(); ?>"><?= $tag->getTagName(); ?></a>
+                    <a href="/user/<?= $user->getUsername(); ?>"><?= $user->getUsername(); ?></a>
                 </div>
             <?php endforeach; ?>
         </div>
